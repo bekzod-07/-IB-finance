@@ -1,1 +1,1 @@
-export const partners = ['Alpha Group','Green Line','Navo Finance','Prime Trade','Eco Build','Smart Retail'];
+export const partners = ['Water Plant Building','Lexcell','Yangi Zamon Project','Davlatbek Zig\'ir osh'];
