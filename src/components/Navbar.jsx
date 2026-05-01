@@ -8,7 +8,7 @@ export default function Navbar({ lang, setLang, t }) {
     ['home', t.nav.home], ['services', t.nav.services], ['advantages', t.nav.advantages], ['partners', t.nav.partners], ['testimonials', t.nav.testimonials], ['about', t.nav.about], ['contact', t.nav.contact]
   ];
   return <header className="navbar">
-    <a href="#home" className="brand" onClick={() => setOpen(false)}><img src="/logo.png" alt="Company logo"/><span>iB Finance</span></a>
+    <a href="#home" className="brand" onClick={() => setOpen(false)}><img src="/logo.png" alt="Company logo"/><span>Ideal Balance</span></a>
     <button className="menu-btn" onClick={() => setOpen(!open)} aria-label="Menu">{open ? <FiX/> : <FiMenu/>}</button>
     <nav className={open ? 'nav-links open' : 'nav-links'}>
       {links.map(([id, label]) => <a key={id} href={`#${id}`} onClick={() => setOpen(false)}>{label}</a>)}
