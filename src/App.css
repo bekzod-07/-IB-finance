@@ -150,7 +150,8 @@
 
   .contact-icon {
     width: 42px;
-    height: 42px;
+    height: 42px; 
+    
     min-width: 42px;
   }
 }
