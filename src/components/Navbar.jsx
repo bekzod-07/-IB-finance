@@ -19,7 +19,7 @@ export default function Navbar({ lang, setLang, t }) {
     <header className="navbar">
       <a href="#home" className="brand" onClick={() => setOpen(false)}>
         <img src="/logo.png" alt="Company logo" />
-        <span>Ideal Balance</span>
+        <span>IDEAL BALANCE</span>
       </a>
 
       <button className="menu-btn" onClick={() => setOpen(!open)} aria-label="Menu">

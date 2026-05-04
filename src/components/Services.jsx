@@ -16,8 +16,11 @@ export default function Services({ lang, t }) {
             const Icon = s.icon;
             return (
               <article className="card service-card reveal" key={s[lang].title}>
-                <div className="icon-box">
-                  <Icon />
+                <div className="service-card-header">
+                  <div className="icon-box">
+                    <Icon />
+                  </div>
+                  {s.isNew && <span className="badge-new">NEW</span>}
                 </div>
                 <h3>{s[lang].title}</h3>
                 <p>{s[lang].text}</p>

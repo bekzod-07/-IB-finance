@@ -17,7 +17,7 @@ export default function Footer({ lang, t }) {
         <div>
           <a className="brand footer-brand" href="#home">
             <img src="/logo.png" alt="Company logo" />
-            <span>Ideal Balance</span>
+            <span>IDEAL BALANCE</span>
           </a>
           <p>{t.footer.text}</p>
         </div>
@@ -72,7 +72,7 @@ export default function Footer({ lang, t }) {
       </div>
 
       <div className="copyright">
-        © {new Date().getFullYear()} Ideal Balance. {t.footer.rights}
+        © {new Date().getFullYear()} IDEAL BALANCE. {t.footer.rights}
       </div>
     </footer>
   );
