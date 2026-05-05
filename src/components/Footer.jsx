@@ -1,4 +1,4 @@
-import { FiFacebook, FiInstagram, FiSend } from 'react-icons/fi';
+import { FiSend, FiInstagram, FiFacebook, FiYoutube, FiLinkedin } from 'react-icons/fi';
 import { services } from '../data/services';
 
 export default function Footer({ lang, t }) {
@@ -43,29 +43,20 @@ export default function Footer({ lang, t }) {
         <div>
           <h3>{t.footer.social}</h3>
           <div className="socials">
-            <a
-              href="https://t.me/idealbalance"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Telegram"
-            >
+            <a href="https://t.me/idealbalance" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
               <FiSend />
             </a>
-            <a
-              href="https://instagram.com/ideal__balance"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            >
+            <a href="https://instagram.com/ideal__balance" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FiInstagram />
             </a>
-            <a
-              href="https://facebook.com/Ideal-Balance"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-            >
+            <a href="https://facebook.com/Ideal-Balance" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <FiFacebook />
+            </a>
+            <a href="https://www.youtube.com/@IDEALBALANCE" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <FiYoutube />
+            </a>
+            <a href="https://www.linkedin.com/in/ideal-balance-51b51236a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <FiLinkedin />
             </a>
           </div>
         </div>
