@@ -21,6 +21,10 @@ export const services = [
       title: 'Бухгалтерский аутсорсинг',
       text:  'Удалённо ведём бухгалтерию юридических лиц и индивидуальных предпринимателей.',
     },
+    en: {
+      title: 'Professional Accounting Services',
+      text:  'We remotely manage the bookkeeping of all types of legal entities and sole proprietors.',
+    },
   },
   {
     icon: FiBookOpen,
@@ -31,6 +35,10 @@ export const services = [
     ru: {
       title: 'Подготовка бухгалтерских кадров',
       text:  'Обучаем специалистов с практическими знаниями в сфере бухгалтерии.',
+    },
+    en: {
+      title: 'Accounting & Legal Staff Training',
+      text:  'We train specialists with practical knowledge in accounting and legal fields.',
     },
   },
   {
@@ -43,6 +51,10 @@ export const services = [
       title: 'Юридические услуги в налоговой и бизнес-сфере',
       text:  'Оказываем профессиональную помощь по юридическим вопросам налогообложения и бизнеса.',
     },
+    en: {
+      title: 'Legal Services in Tax & Business',
+      text:  'We provide professional assistance on legal matters related to taxation, business, and enterprise operations.',
+    },
   },
   {
     icon: FiRefreshCw,
@@ -53,6 +65,10 @@ export const services = [
     ru: {
       title: 'Восстановление бухгалтерии с нуля',
       text:  'Восстанавливаем бухгалтерский учёт компании на основе документов и приводим его в порядок.',
+    },
+    en: {
+      title: 'Accounting Restoration from Scratch',
+      text:  'We fully restore a company\'s accounting records based on available documents and bring them into proper order.',
     },
   },
   {
@@ -65,6 +81,10 @@ export const services = [
       title: 'Налоговые консультации',
       text:  'Даём практические консультации по налоговому режиму, отчётности и обязательствам.',
     },
+    en: {
+      title: 'Professional Tax Consulting',
+      text:  'We provide clear and practical advice on tax regimes, reporting, and obligations.',
+    },
   },
   {
     icon: FiGlobe,
@@ -76,6 +96,10 @@ export const services = [
       title: 'Открытие местных и иностранных компаний',
       text:  'Консультируем по открытию и регистрации местных и иностранных компаний.',
     },
+    en: {
+      title: 'Local & Foreign Company Registration',
+      text:  'We advise on the opening and registration of local and foreign companies.',
+    },
   },
   {
     icon: FiEye,
@@ -86,6 +110,10 @@ export const services = [
     ru: {
       title: 'Бизнес-мониторинг и защита',
       text:  'Помогаем анализировать бизнес-процессы, контролировать деятельность и отслеживать финансовое состояние.',
+    },
+    en: {
+      title: 'Business Monitoring & Protection',
+      text:  'We help analyse business processes, oversee operations, and track your financial health.',
     },
   },
   {
@@ -99,6 +127,10 @@ export const services = [
       title: 'Повышение рейтинга строительных компаний',
       text:  'Скоро будут запущены услуги по повышению рейтинга строительных компаний.',
     },
+    en: {
+      title: 'Construction Company Rating Improvement',
+      text:  'Services to boost the ratings of construction companies are coming soon.',
+    },
   },
   {
     icon: FiBarChart2,
@@ -110,6 +142,10 @@ export const services = [
     ru: {
       title: 'Участие в аукционах и бирже',
       text:  'Скоро будут доступны услуги по участию в аукционах и биржевых процессах.',
+    },
+    en: {
+      title: 'Auction & Exchange Participation',
+      text:  'Services for participating in auctions and exchange processes are coming soon.',
     },
   },
 ];

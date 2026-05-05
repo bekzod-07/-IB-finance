@@ -17,7 +17,12 @@ export default function WhyChooseUs({ t }) {
           {t.whyItems.map((item, i) => {
             const Icon = icons[i];
             return (
-              <article className="card why-card reveal" key={item}>
+              <article
+                className="card why-card"
+                key={item}
+                data-aos="zoom-in"
+                data-aos-delay={i * 100}
+              >
                 <Icon />
                 <h3>{item}</h3>
               </article>

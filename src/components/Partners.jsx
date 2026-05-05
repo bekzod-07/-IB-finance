@@ -12,8 +12,14 @@ export default function Partners({ t }) {
         />
 
         <div className="partner-grid">
-          {partners.map((p) => (
-            <div className="partner-card reveal" key={p} aria-label={p}>
+          {partners.map((p, i) => (
+            <div
+              className="partner-card"
+              key={p}
+              aria-label={p}
+              data-aos="fade-up"
+              data-aos-delay={i * 80}
+            >
               <div className="partner-logo-text">{p}</div>
             </div>
           ))}

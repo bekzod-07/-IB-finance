@@ -8,12 +8,12 @@ export default function Hero({ t }) {
       <div className="hero-bg" />
 
       <div className="container hero-grid">
-        <div className="hero-content reveal">
-          <span className="eyebrow">{t.hero.eyebrow}</span>
-          <h1>{t.hero.title}</h1>
-          <p>{t.hero.text}</p>
+        <div className="hero-content" data-aos="fade-right" data-aos-delay="100">
+          <span className="eyebrow" data-aos="fade-down" data-aos-delay="150">{t.hero.eyebrow}</span>
+          <h1 data-aos="fade-up" data-aos-delay="200">{t.hero.title}</h1>
+          <p data-aos="fade-up" data-aos-delay="250">{t.hero.text}</p>
 
-          <div className="hero-actions">
+          <div className="hero-actions" data-aos="fade-up" data-aos-delay="300">
             <a href="#contact" className="btn primary">{t.hero.primary}</a>
             <a href="#services" className="btn secondary">{t.hero.secondary}</a>
           </div>
@@ -22,7 +22,7 @@ export default function Hero({ t }) {
             {t.hero.badges.map((b, i) => {
               const Icon = icons[i];
               return (
-                <div className="badge" key={b}>
+                <div className="badge" key={b} data-aos="zoom-in" data-aos-delay={350 + i * 80}>
                   <Icon />
                   <span>{b}</span>
                 </div>
@@ -31,7 +31,7 @@ export default function Hero({ t }) {
           </div>
         </div>
 
-        <div className="hero-card reveal">
+        <div className="hero-card" data-aos="fade-left" data-aos-delay="300">
           <div className="glass-card">
             <div className="chart-lines">
               <span />

@@ -41,10 +41,7 @@ export default function Contact({ t }) {
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            chat_id: TELEGRAM_CHAT_ID,
-            text,
-          }),
+          body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text }),
         }
       );
 
@@ -69,52 +66,35 @@ export default function Contact({ t }) {
         />
 
         <div className="contact-grid">
-          <div className="contact-info reveal">
-            <div className="contact-card">
-              <div className="contact-icon">
-                <FiPhone />
-              </div>
-              <div className="contact-content">
-                <span>{t.contact.phone}</span>
-                <a href="tel:+998931112021">+998 93 111 20 21</a>
-                <a href="tel:+998937002021">+998 93 700 20 21</a>
-              </div>
-            </div>
-
-            <div className="contact-card">
-              <div className="contact-icon">
-                <FiSend />
-              </div>
-              <div className="contact-content">
-                <span>{t.contact.telegram}</span>
-                <a href="https://t.me/idealbalance" target="_blank" rel="noopener noreferrer">
-                  @idealbalance
-                </a>
-              </div>
-            </div>
-
-            <div className="contact-card">
-              <div className="contact-icon">
-                <FiMail />
-              </div>
-              <div className="contact-content">
-                <span>{t.contact.email}</span>
+          <div className="contact-info" data-aos="fade-right" data-aos-delay="100">
+            {[
+              { icon: <FiPhone />, label: t.contact.phone, content: (
+                <>
+                  <a href="tel:+998931112021">+998 93 111 20 21</a>
+                  <a href="tel:+998937002021">+998 93 700 20 21</a>
+                </>
+              )},
+              { icon: <FiSend />, label: t.contact.telegram, content: (
+                <a href="https://t.me/idealbalance" target="_blank" rel="noopener noreferrer">@idealbalance</a>
+              )},
+              { icon: <FiMail />, label: t.contact.email, content: (
                 <a href="mailto:idealbalance1@gmail.com">idealbalance1@gmail.com</a>
+              )},
+              { icon: <FiMapPin />, label: 'Office', content: (
+                <strong>Toshkent shahar Chilonzor tumani Bunyodkor shoh ko'chasi 44A uy</strong>
+              )},
+            ].map((item, i) => (
+              <div className="contact-card" key={i} data-aos="fade-up" data-aos-delay={150 + i * 100}>
+                <div className="contact-icon">{item.icon}</div>
+                <div className="contact-content">
+                  <span>{item.label}</span>
+                  {item.content}
+                </div>
               </div>
-            </div>
-
-            <div className="contact-card">
-              <div className="contact-icon">
-                <FiMapPin />
-              </div>
-              <div className="contact-content">
-                <span>Office</span>
-                <strong>Toshkent shahar Chilonzor tumani Bunyodkor shoh ko‘chasi 44A uy</strong>
-              </div>
-            </div>
+            ))}
           </div>
 
-          <form className="contact-form reveal" onSubmit={submit}>
+          <form className="contact-form" data-aos="fade-left" data-aos-delay="200" onSubmit={submit}>
             <label>
               {t.contact.name}
               <input
@@ -144,9 +124,7 @@ export default function Contact({ t }) {
             </label>
 
             {status.text && (
-              <div className={`form-status ${status.type}`}>
-                {status.text}
-              </div>
+              <div className={`form-status ${status.type}`}>{status.text}</div>
             )}
 
             <button className="btn primary" disabled={loading}>

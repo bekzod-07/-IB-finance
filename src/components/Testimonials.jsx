@@ -13,8 +13,13 @@ export default function Testimonials({ lang, t }) {
         />
 
         <div className="grid cards-2">
-          {testimonials.map(x => (
-            <article className="card testimonial reveal" key={x.name}>
+          {testimonials.map((x, i) => (
+            <article
+              className="card testimonial"
+              key={x.name}
+              data-aos="fade-up"
+              data-aos-delay={i * 120}
+            >
               <div className="stars">
                 {[1, 2, 3, 4, 5].map(n => (
                   <FiStar key={n} />

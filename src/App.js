@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -13,6 +15,16 @@ import { translations } from './data/translations';
 export default function App() {
   const [lang, setLang] = useState('uz');
   const t = translations[lang];
+
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      once: true,
+      easing: 'ease-out-cubic',
+      offset: 60,
+    });
+  }, []);
+
   return <>
     <Navbar lang={lang} setLang={setLang} t={t} />
     <main>

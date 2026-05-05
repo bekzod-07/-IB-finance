@@ -12,10 +12,15 @@ export default function Services({ lang, t }) {
         />
 
         <div className="grid cards-3">
-          {services.map((s) => {
+          {services.map((s, i) => {
             const Icon = s.icon;
             return (
-              <article className="card service-card reveal" key={s[lang].title}>
+              <article
+                className="card service-card"
+                key={s[lang].title}
+                data-aos="fade-up"
+                data-aos-delay={i * 80}
+              >
                 <div className="service-card-header">
                   <div className="icon-box">
                     <Icon />
