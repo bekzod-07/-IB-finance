@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import NewsCarousel from './components/NewsCarousel';
 import WhyChooseUs from './components/WhyChooseUs';
 import Partners from './components/Partners';
 import Testimonials from './components/Testimonials';
@@ -19,7 +20,8 @@ export default function App() {
   useEffect(() => {
     AOS.init({
       duration: 700,
-      once: true,
+      once: false,
+      mirror: true,
       easing: 'ease-out-cubic',
       offset: 60,
     });
@@ -29,6 +31,7 @@ export default function App() {
     <Navbar lang={lang} setLang={setLang} t={t} />
     <main>
       <Hero t={t} />
+      <NewsCarousel t={t} />
       <Services lang={lang} t={t} />
       <WhyChooseUs t={t} />
       <Partners t={t} />

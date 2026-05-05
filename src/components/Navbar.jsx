@@ -8,6 +8,7 @@ export default function Navbar({ lang, setLang, t }) {
   const links = [
     ['home',         t.nav.home],
     ['services',     t.nav.services],
+    ['news',         t.nav.news],
     ['advantages',   t.nav.advantages],
     ['partners',     t.nav.partners],
     ['testimonials', t.nav.testimonials],
