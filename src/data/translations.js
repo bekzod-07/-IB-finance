@@ -13,13 +13,13 @@ export const translations = {
     },
 
     hero: {
-      eyebrow: 'Premium buxgalteriya hamkoringiz',
+      eyebrow: 'Soliq va buxgalteriya sohasidagi ishonchli hamkoringiz',
       title: 'Biznesingiz moliyasini ishonchli mutaxassislarga topshiring',
       text: 'Soliq hisobotlari, buxgalteriya yuritish va moliyaviy maslahatlarni aniq, tartibli va qonunchilikka mos tarzda olib boramiz.',
       primary: 'Bepul konsultatsiya',
-      secondary: 'Xizmatlarni ko‘rish',
+      secondary: 'Xizmatlarni ko\'rish',
       badges: [
-        '12+ yil tajriba',
+        '15+ yil tajriba',
         '100+ biznesga xizmat',
         'Soliq risklaridan ishonchli himoya',
       ],
@@ -31,18 +31,18 @@ export const translations = {
       services: 'Xizmatlarimiz',
       servicesSub: 'Biznesingiz uchun kompleks buxgalteriya yechimlari',
       newsEyebrow: 'Yangiliklar',
-      news: 'So‘nggi yangiliklar',
-      newsSub: 'Buxgalteriya, soliq va biznes xavfsizligi bo‘yicha dolzarb yangiliklar',
+      news: 'So\'nggi yangiliklar',
+      newsSub: 'Buxgalteriya, soliq va biznes xavfsizligi bo\'yicha dolzarb yangiliklar',
       why: 'Nima uchun bizni tanlashadi',
-      whySub: 'Har bir mijoz uchun aniqlik, maxfiylik va natijaga yo‘naltirilgan xizmat',
+      whySub: 'Har bir mijoz uchun aniqlik, maxfiylik va natijaga yo\'naltirilgan xizmat',
       partners: 'Bizga ishonch bildirgan hamkorlar',
       partnersSub: 'Turli sohalardagi kompaniyalar bilan barqaror hamkorlik',
       testimonials: 'Mijozlar fikrlari',
       testimonialsSub: 'Hamkorlarimiz tajribasi va fikrlari',
       about: 'Kompaniya haqida',
-      aboutSub: 'Biz raqamlar, hujjatlar va mas’uliyat bilan ishlaymiz',
+      aboutSub: 'Biz raqamlar, hujjatlar va mas\'uliyat bilan ishlaymiz',
       contact: 'Aloqa',
-      contactSub: 'Bepul konsultatsiya uchun ma’lumotlaringizni qoldiring',
+      contactSub: 'Bepul konsultatsiya uchun ma\'lumotlaringizni qoldiring',
     },
 
     news: {
@@ -51,7 +51,7 @@ export const translations = {
         {
           date: '2026',
           category: 'Soliq nazorati',
-          title: 'Hisobotlarni o‘z vaqtida topshirish biznes xavfsizligini oshiradi',
+          title: 'Hisobotlarni o\'z vaqtida topshirish biznes xavfsizligini oshiradi',
           text: 'Ideal Balance jamoasi soliq hisobotlari va moliyaviy jarayonlarni professional tarzda yuritadi.',
           stat: '98% aniqlik',
         },
@@ -59,7 +59,7 @@ export const translations = {
           date: '2026',
           category: 'Buxgalteriya',
           title: 'Masofaviy buxgalteriya tadbirkorlar vaqtini tejaydi',
-          text: 'Hujjatlar, to‘lovlar va hisob-kitoblar yagona tizim asosida boshqariladi.',
+          text: 'Hujjatlar, to\'lovlar va hisob-kitoblar yagona tizim asosida boshqariladi.',
           stat: '24/7 yordam',
         },
         {
@@ -67,7 +67,7 @@ export const translations = {
           category: 'Konsalting',
           title: 'Soliq risklarini oldindan baholash ustunlik beradi',
           text: 'Mutaxassislarimiz xatarlarni tahlil qilib, optimal yechimlar taklif qiladi.',
-          stat: '12+ yil tajriba',
+          stat: '15+ yil tajriba',
         },
       ],
     },
@@ -76,16 +76,16 @@ export const translations = {
       'Yuqori malakali mutaxassislar',
       'Tezkor va ishonchli xizmat',
       'Maxfiylik kafolati',
-      'Hisobotlar o‘z vaqtida',
+      'Hisobotlar o\'z vaqtida',
       'Individual yondashuv',
       'Standartlarga mos ish yuritish',
     ],
 
     about: {
-      title: 'Moliyaviy tartib — biznes barqarorligining asosi',
-      text: 'Jamoamiz kichik bizneslardan tortib yirik korxonalargacha buxgalteriya, soliq va hujjatlar bo‘yicha tizimli xizmat ko‘rsatadi. Biz ish jarayonida shaffoflik, maxfiylik va aniq muddatlarga tayanamiz.',
+      title: 'IDEAL BALANCE — soliq va huquqiy sohada qalqoningiz',
+      text: '«IDEAL BALANCE» kompaniyasi 15 yildan ortiq vaqt davomida mahalliy va xorijiy korxonalarga buxgalteriya va konsalting xizmatlarini ko\'rsatib kelmoqda.\n\nKompaniya O\'zbekiston Respublikasi bo\'ylab tadbirkorlik yuritishning barcha qonuniy sub\'ektlarini ro\'yxatdan o\'tkazish, tashkilotlarning barcha ta\'sis hujjatlarini tayyorlash va davlat ro\'yxatidan o\'tkazish xizmatlarini taqdim etadi.\n\nBugungi kunda «IDEAL BALANCE» iqtisodiyotning barcha sohalarida faoliyat ko\'rsatuvchi 100 dan ziyod kompaniyalarga boshlang\'ich buxgalteriya va yuridik xizmatlarni ko\'rsatib, ishonchli hamkorlik qilib kelmoqda.\n\nShuningdek kompaniya mutaxassislari Janubiy Koreya, Rossiya, Estoniya va Avstriyada tashkil etilgan kompaniyalar hamda chet el fuqarolari tomonidan ta\'sis etilgan korxonalarga ham xizmat ko\'rsatib kelmoqda.',
       stats: [
-        ['12+', 'yil tajriba'],
+        ['15+', 'yil tajriba'],
         ['100+', 'mijoz'],
         ['98%', 'mijozlar mamnunligi'],
       ],
@@ -104,9 +104,9 @@ export const translations = {
       sending: 'Yuborilmoqda...',
       noConfig: 'Telegram sozlamalari kiritilmagan',
       success: 'Arizangiz muvaffaqiyatli yuborildi',
-      error: 'Xatolik yuz berdi. Qayta urinib ko‘ring.',
-      required: 'Barcha maydonlarni to‘ldiring',
-      phoneError: 'Telefon raqam formati noto‘g‘ri',
+      error: 'Xatolik yuz berdi. Qayta urinib ko\'ring.',
+      required: 'Barcha maydonlarni to\'ldiring',
+      phoneError: 'Telefon raqam formati noto\'g\'ri',
     },
 
     footer: {
@@ -132,13 +132,13 @@ export const translations = {
     },
 
     hero: {
-      eyebrow: 'Your Premium Accounting Partner',
+      eyebrow: 'Your Trusted Partner in Tax and Accounting',
       title: 'Entrust Your Business Finances to Professionals',
       text: 'We manage accounting, tax reporting, and financial consulting accurately, efficiently, and in full compliance with regulations.',
       primary: 'Free Consultation',
       secondary: 'View Services',
       badges: [
-        '12+ years of experience',
+        '15+ years of experience',
         '100+ businesses served',
         'Reliable tax risk protection',
       ],
@@ -186,7 +186,7 @@ export const translations = {
           category: 'Consulting',
           title: 'Early tax risk assessment gives your business an advantage',
           text: 'Our specialists analyze risks and offer optimal financial solutions.',
-          stat: '12+ years',
+          stat: '15+ years',
         },
       ],
     },
@@ -201,10 +201,10 @@ export const translations = {
     ],
 
     about: {
-      title: 'Financial order is the foundation of business stability',
-      text: 'Our team provides systematic accounting, tax, and documentation services for small businesses and large companies. We rely on transparency, confidentiality, and clear deadlines.',
+      title: 'IDEAL BALANCE — Your Shield in Tax and Legal Matters',
+      text: '«IDEAL BALANCE» has been providing accounting and consulting services to local and foreign companies for over 15 years.\n\nThe company offers services across the Republic of Uzbekistan for registering all legal forms of business, preparing founding documents, and completing state registration.\n\nToday, «IDEAL BALANCE» partners with over 100 companies operating across all sectors of the economy, providing primary accounting and legal services through trusted long-term cooperation.\n\nThe company\'s specialists also serve businesses established in South Korea, Russia, Estonia, and Austria, as well as companies founded by foreign nationals.',
       stats: [
-        ['12+', 'years of experience'],
+        ['15+', 'years of experience'],
         ['100+', 'clients'],
         ['98%', 'client satisfaction'],
       ],
@@ -251,13 +251,13 @@ export const translations = {
     },
 
     hero: {
-      eyebrow: 'Ваш премиальный бухгалтерский партнёр',
+      eyebrow: 'Ваш надёжный партнёр в сфере налогов и бухгалтерии',
       title: 'Доверьте финансы бизнеса профессионалам',
       text: 'Мы ведём бухгалтерию, налоговую отчётность и финансовые консультации точно, своевременно и в соответствии с законодательством.',
       primary: 'Бесплатная консультация',
       secondary: 'Смотреть услуги',
       badges: [
-        '12+ лет опыта',
+        '15+ лет опыта',
         '100+ клиентов',
         'Надёжная защита от налоговых рисков',
       ],
@@ -305,7 +305,7 @@ export const translations = {
           category: 'Консалтинг',
           title: 'Ранняя оценка налоговых рисков даёт бизнесу преимущество',
           text: 'Наши специалисты анализируют риски и предлагают оптимальные финансовые решения.',
-          stat: '12+ лет опыта',
+          stat: '15+ лет опыта',
         },
       ],
     },
@@ -320,10 +320,10 @@ export const translations = {
     ],
 
     about: {
-      title: 'Финансовый порядок — основа стабильности бизнеса',
-      text: 'Наша команда оказывает системные бухгалтерские, налоговые и документальные услуги для малого бизнеса и крупных компаний. В работе мы опираемся на прозрачность, конфиденциальность и точные сроки.',
+      title: 'IDEAL BALANCE — ваш щит в налоговой и правовой сфере',
+      text: 'Компания «IDEAL BALANCE» более 15 лет оказывает бухгалтерские и консалтинговые услуги местным и иностранным предприятиям.\n\nКомпания предоставляет услуги по всей Республике Узбекистан: регистрация всех законных субъектов предпринимательской деятельности, подготовка учредительных документов организаций и их государственная регистрация.\n\nСегодня «IDEAL BALANCE» сотрудничает с более чем 100 компаниями, работающими во всех отраслях экономики, оказывая им первичные бухгалтерские и юридические услуги на основе надёжного долгосрочного партнёрства.\n\nСпециалисты компании также обслуживают предприятия, зарегистрированные в Южной Корее, России, Эстонии и Австрии, а также компании, учреждённые иностранными гражданами.',
       stats: [
-        ['12+', 'лет опыта'],
+        ['15+', 'лет опыта'],
         ['100+', 'клиентов'],
         ['98%', 'довольных клиентов'],
       ],

@@ -1,45 +1,70 @@
 import { useEffect, useState } from 'react';
-import { FiArrowLeft, FiArrowRight, FiCalendar, FiTrendingUp } from 'react-icons/fi';
+import { FiCalendar, FiTrendingUp, FiArrowRight, FiBarChart2, FiClock, FiAward } from 'react-icons/fi';
 import SectionTitle from './SectionTitle';
+
+const icons = [FiBarChart2, FiClock, FiAward];
+const accents = ['#6c63ff', '#00b894', '#fd79a8'];
+const lightBg = ['rgba(108,99,255,0.08)', 'rgba(0,184,148,0.08)', 'rgba(253,121,168,0.08)'];
 
 export default function NewsCarousel({ t }) {
   const items = t.news.items;
-  const [active, setActive] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => setActive((prev) => (prev + 1) % items.length), 4200);
-    return () => clearInterval(timer);
-  }, [items.length]);
-
-  const goTo = (index) => setActive((index + items.length) % items.length);
-  const item = items[active];
+  const [active, setActive] = useState(null);
 
   return (
     <section id="news" className="section news-section">
       <div className="container">
-        <SectionTitle eyebrow={t.sections.newsEyebrow} title={t.sections.news} subtitle={t.sections.newsSub} />
-        <div className="news-carousel" data-aos="fade-up">
-          <button className="news-arrow left" onClick={() => goTo(active - 1)} aria-label="Previous news"><FiArrowLeft /></button>
-          <article className="news-slide" key={active} data-aos="zoom-in" data-aos-duration="600">
-            <div className="news-content">
-              <div className="news-meta">
-                <span><FiCalendar /> {item.date}</span>
-                <span><FiTrendingUp /> {item.category}</span>
-              </div>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-              <a href="#contact" className="btn primary news-btn">{t.news.cta}</a>
-            </div>
-            <div className="news-visual" aria-hidden="true">
-              <div className="news-ring" />
-              <div className="news-card-mini top">{item.stat}</div>
-              <div className="news-card-mini bottom">IDEAL BALANCE</div>
-            </div>
-          </article>
-          <button className="news-arrow right" onClick={() => goTo(active + 1)} aria-label="Next news"><FiArrowRight /></button>
-        </div>
-        <div className="news-dots" data-aos="fade-up" data-aos-delay="120">
-          {items.map((_, i) => <button key={i} className={i === active ? 'active' : ''} onClick={() => goTo(i)} aria-label={`Open news ${i + 1}`} />)}
+        <SectionTitle
+          eyebrow={t.sections.newsEyebrow}
+          title={t.sections.news}
+          subtitle={t.sections.newsSub}
+        />
+
+        <div className="news-cards-grid" data-aos="fade-up">
+          {items.map((item, i) => {
+            const Icon = icons[i];
+            const accent = accents[i];
+            const bg = lightBg[i];
+            return (
+              <article
+                key={i}
+                className={`news-card-new${active === i ? ' is-active' : ''}`}
+                style={{ '--accent': accent, '--accent-bg': bg }}
+                onMouseEnter={() => setActive(i)}
+                onMouseLeave={() => setActive(null)}
+                data-aos="fade-up"
+                data-aos-delay={i * 100}
+              >
+                {/* Top accent bar */}
+                <div className="nc-bar" />
+
+                {/* Icon badge */}
+                <div className="nc-icon-wrap">
+                  <Icon />
+                </div>
+
+                {/* Meta */}
+                <div className="nc-meta">
+                  <span className="nc-cat">{item.category}</span>
+                  <span className="nc-date"><FiCalendar size={12} /> {item.date}</span>
+                </div>
+
+                {/* Content */}
+                <h3 className="nc-title">{item.title}</h3>
+                <p className="nc-text">{item.text}</p>
+
+                {/* Stat pill */}
+                <div className="nc-stat">
+                  <FiTrendingUp size={13} />
+                  {item.stat}
+                </div>
+
+                {/* CTA */}
+                <a href="#contact" className="nc-cta">
+                  {t.news.cta} <FiArrowRight size={14} />
+                </a>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

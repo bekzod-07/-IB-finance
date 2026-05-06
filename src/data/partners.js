@@ -1,1 +1,15 @@
-export const partners = ['Water Plant Building','Lexcell','Yangi Zamon Project','Davlatbek Zig\'ir osh'];
+export const partners = [
+  { name: 'Water Plant Building', logo: '/partners/water-plant-building.png', bg: '#fff' },
+  { name: 'Lexcell', logo: '/partners/lexcell.png', bg: '#c0282a' },
+  { name: 'Davlatbek Zig\'ir Oshi', logo: '/partners/zigir-oshi.png', bg: '#1a1a1a' },
+  { name: 'EcoMax Engineering', logo: '/partners/ecomax.png', bg: '#1a1a1a' },
+  { name: 'Ideal Innovation School', logo: '/partners/ideal-innovation.png', bg: '#000' },
+  { name: 'THM - Toshkent Haydovchilar Maktabi', logo: '/partners/thm.png', bg: '#fff' },
+  { name: 'Aziya Corn Products', logo: '/partners/aziya.png', bg: '#fff' },
+  { name: 'Enter Plastic', logo: '/partners/enter-plastic.png', bg: '#111' },
+  { name: 'Expert Group Academy', logo: '/partners/expert-group.png', bg: '#fff' },
+  { name: 'Meridian-A', logo: '/partners/meridian.png', bg: '#111' },
+  { name: 'Certification Control', logo: '/partners/certification-control.png', bg: '#fff' },
+  { name: 'Metel Best', logo: '/partners/metel-best.png', bg: '#fff' },
+  { name: 'Kongeoeko Ekspeditsiyasi', logo: '/partners/konggeoeko.png', bg: '#f5f0e8' },
+];
