@@ -19,11 +19,12 @@ export default function App() {
 
   useEffect(() => {
     AOS.init({
-      duration: 700,
-      once: false,
-      mirror: true,
+      duration: 650,
+      once: true,        // animate only once — prevents layout shift on scroll up
+      mirror: false,     // no reverse animation
       easing: 'ease-out-cubic',
-      offset: 60,
+      offset: 80,
+      disable: false,
     });
   }, []);
 
