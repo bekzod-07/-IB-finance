@@ -32,27 +32,6 @@ export default function Partners({ t }) {
             </div>
           </div>
         </div>
-
-        <div className="partner-grid-static">
-          {partners.map((p, i) => (
-            <div
-              className="partner-logo-card static"
-              key={p.name}
-              title={p.name}
-              style={{ '--card-bg': p.bg }}
-              data-aos="fade-up"
-              data-aos-delay={i * 60}
-            >
-              <img
-                src={p.logo}
-                alt={p.name}
-                className="partner-logo-img"
-                loading="lazy"
-              />
-              <span className="partner-name">{p.name}</span>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
